@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8F1F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 700px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #7A9E7E;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #385344;
+}
+
+.address p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.product {
+    display: flex;
+    gap: 20px;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.product-pricing p {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: right;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.payment-methods button {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.payment-methods button:hover {
+    background-color: #ddd;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.summary-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.final-button {
+    background-color: #385344;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.final-button:hover {
+    background-color: #23693b;
+}

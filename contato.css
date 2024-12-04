@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #E8F1F2;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2e493b; /* Fundo verde escuro */
+  }
+  
+  /* Estilo da logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+   
+    height: 80px;
+   
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+   
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: #ffffffa7;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 350px;
+    justify-content: space-around;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    background-color: #3d5541;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .button:hover {
+    background-color: #2f4234;
+  }
+  
+  a {
+    color: #3d5541;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  body{
+    margin: 0; 
+    padding: 0; 
+    background-image: url('fundo.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    height: 737px;
+  }
+
+.link{
+  color: #fff;
+}

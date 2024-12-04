@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit de Automação Residencial</title>
+  <link rel="stylesheet" href="stylesblog.css">
+</head>
+<body>
+    
+      <header class="header">
+        <div class="logo-container">
+          <img src="logo.png" alt="Logo SafeHome" class="logo">
+          <span class="logo-text">SAFEHOME</span>
+        </div>
+        <form class="search-form" action="#" method="get">
+          <input type="text" class="search-input" placeholder="Pesquisar..." name="q">
+          <button type="submit" class="search-button">🔍</button>
+        </form>
+        <div class="espaço">
+          
+        </div>
+      
+    </header>
+    <div class="container">
+      <div class="card">
+        <div class="carousel">
+          <img src="card 1.png" alt="Sistema de Segurança" class="active" height="300px">
+          <img src="card1(2).jpg" alt="Sistema de Segurança" height="300px">
+          <img src="card1(3).jpg" alt="Sistema de Segurança" height="300px">
+          <img src="card1(4).jpg" alt="Sistema de Segurança" height="300px">
+        </div>
+        <h3>Invista em sistemas de segurança</h3>
+        <button onclick="toggleInfo('info1')">Ler mais sobre</button>
+        <div class="extra-info" id="info1">
+            <ul class="dicas">
+                <li>Instale câmeras de vigilância, alarmes e sensores de movimento em pontos estratégicos.</li>
+                <li>Utilize fechaduras reforçadas e, se possível, um sistema de controle de acesso eletrônico.</li>
+                <li>Considere contratar um serviço de monitoramento profissional.</li>
+               
+              </ul> 
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="carousel">
+          <img src="card 2.png" alt="Hábitos Preventivos" class="active" height="300px">
+          <img src="card 2(2).jpg" alt="Hábitos Preventivos" height="300px">
+          <img src="card2(3).jpg" alt="Hábitos Preventivos" height="300px">
+          <img src="card2(4).jpg" alt="Hábitos Preventivos" height="300px">
+        </div>
+        <h3>Adote hábitos preventivos</h3>
+        <button onclick="toggleInfo('info2')">Ler mais sobre</button>
+        <div class="extra-info" id="info2">
+            <ul class="dicas">
+                <li>Evite divulgar sua rotina ou viagens nas redes sociais.</li>
+                <li>Certifique-se de trancar portas e janelas, mesmo quando estiver em casa.</li>
+                <li>Não deixe objetos de valor visíveis do lado de fora, como bicicletas ou eletrônicos.</li>
+               
+              </ul> 
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="carousel">
+          <img src="card 3.jpg" alt="Vigilância Colaborativa" class="active" height="300px">
+          <img src="card3(2).jpeg" alt="Vigilância Colaborativa" height="300px">
+          <img src="card 3(3).jpg" alt="Vigilância Colaborativa" height="300px">
+          <img src="card3(4).png" alt="Vigilância Colaborativa" height="300px">
+        </div>
+        <h3>Crie uma rede de vigilância colaborativa</h3>
+        <button onclick="toggleInfo('info3')">Ler mais sobre</button>
+        <div class="extra-info" id="info3">
+          <ul class="dicas">
+            <li>Conheça e mantenha contato com seus vizinhos; eles podem ajudar a monitorar movimentações suspeitas.</li>
+            <li>Organize ou participe de grupos de segurança no bairro para compartilhar informações.</li>
+            <li>Informe a polícia sobre qualquer comportamento suspeito na área.</li>
+           
+          </ul> 
+        </div>
+      </div>
+    </div>
+  
+    <div class="view-more">
+      <button>Ver Mais</button>
+    </div>
+  
+    <script>
+      function toggleInfo(infoId) {
+        const info = document.getElementById(infoId);
+        if (info.style.display === 'none' || info.style.display === '') {
+          info.style.display = 'block';
+        } else {
+          info.style.display = 'none';
+        }
+      }
+  
+      document.querySelectorAll('.carousel').forEach(carousel => {
+        const images = carousel.querySelectorAll('img');
+        let currentIndex = 0;
+  
+        setInterval(() => {
+          images[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].classList.add('active');
+        }, 3000);
+      });
+    </script>
+  </body>
+  </html>
+  
